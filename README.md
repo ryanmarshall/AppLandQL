@@ -5,9 +5,9 @@ This should instal and startup a working Docker instance
 
 ### Checkout App
 ```
-clone git@github.com:ryanmarshall/AppLandQL.git
+$ clone git@github.com:ryanmarshall/AppLandQL.git
 
-# cd AppLandQL/
+$ cd AppLandQL/
 ```
 
 copy "appland.results.JVCLD-42862-with-info.json" to the /data/ folder
@@ -16,21 +16,21 @@ copy "appland.results.JVCLD-42862-with-info.json" to the /data/ folder
 ### Build Docker
 
 ```
-# docker-compose up
+$ docker-compose up
 ```
 
 ### Log into web instance
 ```
-# docker exec -it #{docker_id} bash
+$ docker exec -it #{docker_id} bash
 ```
 
 ### Load rails data
 ```
-# rake db:migrate
+$ rake db:migrate
 
-# rake db:seed
+$ rake db:seed
 
-# rake load_json:parse
+$ rake load_json:parse
 ```
 
 ### Load query browser
