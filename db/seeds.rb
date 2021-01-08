@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+client = Client.create(name: "Candid Development")
+app = App.create(client: client, name: 'appmap-java', url:'https://github.com/appland/appmap-java', auth_provider: SecureRandom.hex)
+

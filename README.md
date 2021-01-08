@@ -1,24 +1,38 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Install
 
-Things you may want to cover:
+This should instal and startup a working Docker instance
 
-* Ruby version
+### Checkout App
+```
+clone git@github.com:ryanmarshall/AppLandQL.git
 
-* System dependencies
+# cd AppLandQL/
+```
 
-* Configuration
+copy "appland.results.JVCLD-42862-with-info.json" to the /data/ folder
 
-* Database creation
+### Build Docker
 
-* Database initialization
+```
+# docker-compose up
+```
 
-* How to run the test suite
+### Log into web instance
+```
+# docker exec -it #{docker_id} bash
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Load rails data
+```
+# rake db:migrate
 
-* Deployment instructions
+# rake db:seed
 
-* ...
+# rake load_json:parse
+```
+
+### Load query browser
+http://localhost:3000/graphiql
+
+API URL http://localhost:3000/graphql
