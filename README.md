@@ -12,6 +12,7 @@ clone git@github.com:ryanmarshall/AppLandQL.git
 
 copy "appland.results.JVCLD-42862-with-info.json" to the /data/ folder
 
+
 ### Build Docker
 
 ```
